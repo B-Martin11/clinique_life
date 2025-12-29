@@ -1,15 +1,20 @@
-// src/pages/Accueil.tsx
-import React from "react";
+import AccueilCartes from "../components/AccueilCartes";
+import AccueilCartesMobile from "../components/AccueilCartesMobile";
 
-const Accueil: React.FC = () => {
+const Accueil = () => {
   return (
-    <div className="bg-[#D2DEEA] min-h-screen pt-[72px] px-4 md:px-8">
-      <h1 className="text-4xl font-bold text-blue-800 mb-6">
-        Bienvenue à Clinique-Life
-      </h1>
-      <p className="text-lg text-gray-700">
-        Votre santé, notre priorité. Découvrez nos services et prenez rendez-vous facilement.
-      </p>
+    <div className="bg-[#D2DEEA] min-h-screen relative overflow-hidden">
+
+      {/* DESKTOP */}
+      <div className="hidden md:block">
+        <AccueilCartes />
+      </div>
+
+      {/* MOBILE */}
+      <div className="block md:hidden">
+        <AccueilCartesMobile />
+      </div>
+
     </div>
   );
 };
