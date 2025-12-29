@@ -3,7 +3,6 @@ import Globe from "../assets/Globe.png";
 import Sante from "../assets/Sante.png";
 import Facebook from "../assets/Facebook.png";
 import Calendrier from "../assets/Calendrier.png";
-import Wave from "../assets/Wave.png";
 import Cli from "../assets/cli.png";
 import Deco from "../assets/deco.png";
 
