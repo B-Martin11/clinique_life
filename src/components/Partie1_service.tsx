@@ -8,7 +8,7 @@ import autoScan from "../assets/barre_auto_scan.png";
 
 const Partie1_service: React.FC = () => {
   return (
-    <section className="w-full flex flex-col items-center px-4 py-10 md:py-12 bg-gradient-to-b from-[#f4f8fb] to-[#e9f0f6]">
+    <section className="w-full flex flex-col items-center px-4 py-10 md:py-0 bg-gradient-to-b from-[#f4f8fb] to-[#e9f0f6]">
 
       {/* TITRE */}
       <h1 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2 text-center">

@@ -28,11 +28,11 @@ const services: ServiceItem[] = [
 
 const Partie2_apropos: React.FC = () => {
   return (
-    <section className="w-full py-12 px-4 bg-gradient-to-b from-slate-50 to-slate-100">
-      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+    <section className="w-full py-12 px-4 bg-slate-50">
+      <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
 
         {/* HEADER */}
-        <div className="bg-gradient-to-r from-pink-500 to-purple-500 px-10 py-8 text-white flex items-center gap-5">
+        <div className="bg-gradient-to-r from-pink-500 to-purple-500 px-8 py-6 flex items-center gap-4 text-white">
           <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/20">
             <img
               src={BebeIcon}
@@ -42,7 +42,7 @@ const Partie2_apropos: React.FC = () => {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold tracking-wide">
+            <h2 className="text-lg font-semibold tracking-wide">
               FEMME – MÈRE – ENFANT
             </h2>
             <p className="text-sm text-white/90">
@@ -52,24 +52,22 @@ const Partie2_apropos: React.FC = () => {
         </div>
 
         {/* CONTENT */}
-        <div className="px-10 py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="px-8 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-pink-50/70 rounded-2xl p-6 hover:shadow-md transition-all"
+                className="bg-pink-50 rounded-xl p-5 hover:shadow-md transition"
               >
-                <div className="flex items-start gap-4">
-                  {/* CHECK ICON SANS FOND */}
+                <div className="flex items-start gap-3">
                   <img
                     src={CheckIcon}
                     alt="Check"
                     className="w-5 h-5 mt-1 object-contain"
                   />
 
-                  {/* TEXTE */}
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                    <h3 className="text-sm font-semibold text-gray-900 mb-1">
                       {service.title}
                     </h3>
                     <p className="text-xs text-gray-600 leading-relaxed">

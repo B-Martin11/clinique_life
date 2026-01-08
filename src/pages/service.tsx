@@ -11,7 +11,7 @@ const Service = () => {
       className="
         min-h-screen
         bg-white
-        pt-[88px] md:pt-[120px]
+        pt-[20px] md:pt-[20px]
         overflow-x-hidden
       "
     >

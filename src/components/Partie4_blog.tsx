@@ -2,21 +2,18 @@ import React from "react";
 
 const Partie4_blog: React.FC = () => {
   return (
-    <section className="w-full bg-gradient-to-r from-blue-600 via-sky-500 to-teal-400 pt-16 pb-6 px-4 mb-12">
+    <section className="w-full bg-gradient-to-r from-blue-600 via-sky-500 to-teal-400 pt-16 pb-6 px-4">
       <div className="max-w-4xl mx-auto text-center text-white">
 
-        {/* TITRE */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-3">
           Restez informé de nos actualités
         </h2>
 
-        {/* SOUS-TITRE */}
         <p className="text-sm md:text-base text-white/90 mb-8">
           Inscrivez-vous à notre newsletter pour recevoir nos derniers articles
           et conseils santé
         </p>
 
-        {/* FORM */}
         <form
           onSubmit={(e) => e.preventDefault()}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
