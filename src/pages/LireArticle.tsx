@@ -22,8 +22,10 @@ const LireArticle: React.FC = () => {
   return (
     <main
       className="
+        min-h-screen
         bg-white
-        pt-[88px] md:pt-[120px]
+        pt-0
+        -mt-[50px] md:-mt-[30px]
         overflow-x-hidden
       "
     >

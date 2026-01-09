@@ -2,10 +2,10 @@ import React from "react";
 
 const Partie2_lire_article_blog6: React.FC = () => {
   return (
-    <section className="w-full py-20">
+    <section className="w-full p-0 m-0">
       
-      {/* CONTENEUR SANS MARGE */}
-      <div className="px-0">
+      {/* CONTENEUR */}
+      <div className="px-0 m-0">
         
         {/* BLOC CTA – PLEINE LARGEUR */}
         <div
