@@ -35,7 +35,7 @@ export default function Partie3() {
 
           {/* BOUTON */}
           <a
-            href="https://www.google.com/maps"
+            href="https://www.google.com/maps/place/CLINIQUE+M%C3%89DICALE+LIFE/@5.4114731,-3.9716629,17z/data=!3m1!4b1!4m6!3m5!1s0xfc193799b22a97b:0x5a22fb6fb3abb026!8m2!3d5.4114731!4d-3.969088!16s%2Fg%2F11t6qw58ym?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-2 text-white text-sm font-medium shadow hover:bg-blue-700 transition"

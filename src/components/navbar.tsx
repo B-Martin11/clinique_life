@@ -8,8 +8,8 @@ import logo from "../assets/life.png";
 ======================= */
 const links = [
   { label: "Accueil", path: "/" },
-  { label: "À propos", path: "/a-propos" },
-  { label: "Services", path: "/services" },
+  { label: "Services", path: "/a-propos" },
+  { label: " À propos", path: "/services" },
   { label: "Blog", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];

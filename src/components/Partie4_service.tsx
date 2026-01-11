@@ -41,33 +41,32 @@ const team: TeamMember[] = [
 
 const Partie4_service: React.FC = () => {
   return (
-    <section className="w-full py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto text-center">
-        {/* TITRE */}
+    <section className="w-full py-20 px-6 bg-white">
+      <div className="max-w-7xl mx-auto text-center">
+
         <h2 className="text-3xl font-semibold text-gray-900 mb-2">
           Notre Équipe
         </h2>
-        <p className="text-gray-500 mb-8">
+        <p className="text-gray-500 mb-14">
           Des professionnels qualifiés et dévoués à votre service
         </p>
 
-        {/* GRID — ESPACES TRÈS RÉDUITS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-1 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 justify-items-center">
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden w-full max-w-[260px]"
+              className="w-full max-w-[320px] aspect-square bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col"
             >
-              {/* ZONE ICONE */}
-              <div className="w-full h-[120px] flex items-center justify-center bg-gradient-to-br from-blue-100 to-cyan-100">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-sm">
+              {/* HAUT */}
+              <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-blue-100 to-cyan-100">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.8}
                     stroke="white"
-                    className="w-7 h-7"
+                    className="w-9 h-9"
                   >
                     <path
                       strokeLinecap="round"
@@ -78,21 +77,22 @@ const Partie4_service: React.FC = () => {
                 </div>
               </div>
 
-              {/* TEXTE */}
-              <div className="p-2 text-left">
-                <h3 className="font-semibold text-gray-900 text-sm">
+              {/* BAS TEXTE */}
+              <div className="flex-1 p-5 text-left bg-white">
+                <h3 className="font-semibold text-gray-900 text-base mb-1">
                   {member.name}
                 </h3>
-                <p className="text-blue-600 text-sm font-medium">
+                <p className="text-sky-600 text-sm font-medium mb-1">
                   {member.role}
                 </p>
-                <p className="text-gray-500 text-xs leading-tight">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   {member.specialty}
                 </p>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

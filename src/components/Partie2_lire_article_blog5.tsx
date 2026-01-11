@@ -9,12 +9,13 @@ const Partie2_lire_article_blog5: React.FC = () => {
     <section className="w-full bg-white px-4 py-20">
       <div className="max-w-6xl mx-auto">
 
+        {/* TITRE */}
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-12">
           Articles similaires
         </h2>
 
         {/* CARTES */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 justify-items-start">
 
           {/* ARTICLE 1 */}
           <article className="bg-[#f3fbff] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition max-w-[420px]">
@@ -47,8 +48,8 @@ const Partie2_lire_article_blog5: React.FC = () => {
             </div>
           </article>
 
-          {/* ARTICLE 2 (rapproché) */}
-          <article className="bg-[#f3fbff] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition max-w-[420px] md:-ml-32">
+          {/* ARTICLE 2 */}
+          <article className="bg-[#f3fbff] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition max-w-[420px]">
             <div className="relative">
               <img
                 src={Doc3}
