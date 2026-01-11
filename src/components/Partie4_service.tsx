@@ -55,10 +55,10 @@ const Partie4_service: React.FC = () => {
           {team.map((member, index) => (
             <div
               key={index}
-              className="w-full max-w-[320px] aspect-square bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col"
+              className="w-full max-w-[320px] bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col"
             >
               {/* HAUT */}
-              <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-blue-100 to-cyan-100">
+              <div className="flex items-center justify-center bg-gradient-to-br from-blue-100 to-cyan-100 py-10">
                 <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +77,8 @@ const Partie4_service: React.FC = () => {
                 </div>
               </div>
 
-              {/* BAS TEXTE */}
-              <div className="flex-1 p-5 text-left bg-white">
+              {/* BAS TEXTE — MARGE BLANCHE RÉDUITE */}
+              <div className="px-5 pt-4 pb-3 text-left bg-white">
                 <h3 className="font-semibold text-gray-900 text-base mb-1">
                   {member.name}
                 </h3>
